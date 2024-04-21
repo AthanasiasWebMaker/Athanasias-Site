@@ -1,0 +1,24 @@
+/* Import the Fredoka One font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* Apply Fredoka One font to all text */
+body {
+    font-family: 'Fredoka One', sans-serif;
+    /* Create a background with multiple gradients */
+    background-image: 
+        radial-gradient(circle at 20% 20%, pink, transparent), /* Pink radial gradient */
+        linear-gradient(45deg, purple, blue), /* Diagonal gradient from purple to blue */
+        repeating-linear-gradient(-45deg, lightblue, lightblue 10%, transparent 10%, transparent 20%); /* Repeating linear gradient with lightblue stripes */
+    background-size: 200% 200%; /* To allow for smooth animation */
+    animation: background-animation 10s infinite alternate; /* Animation for background movement */
+}
+
+/* Animation for background movement */
+@keyframes background-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
